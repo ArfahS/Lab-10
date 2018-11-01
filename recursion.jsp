@@ -67,14 +67,13 @@
      * compute the 1st fibonacci number.
      * @return The value of the nth fibonacci number.
      */
-public int fibonacci(int n)
-{
+    public int fibonacci(int n)
+    {
+         
+    }
 
+    //TODO
 
-	//TODO
-
-
-    
     /**
      * Class that represents a tree. This is a data structure comprised of several nodes. Each node may
      * have some number of "child" nodes. These are linked to via its "children" lists. Each node also
@@ -96,35 +95,36 @@ public int fibonacci(int n)
      * @author Stephen
      * @version 2018-04-23
      */
-protected final class Tree
-{
-    private ArrayList<Tree> children;
-    private int value;
-    
-    public Tree(int value)
+    protected final class Tree
     {
-	//TODO
-	value = value;
-	children = new ArrayList<Tree>();
+        private ArrayList<Tree> children;
+        private int value;
+
+        public Tree(int value)
+        {
+            //TODO
+            value = value;
+            children = new ArrayList<Tree>();
+        }
+
+        public int getValue()
+        {
+            //TODO
+            return value;
+        }
+
+        public ArrayList<Tree> getChildren()
+        {
+            //TODO
+            return children;
+        }
+
+        public void add(Tree child)
+        {
+            //TODO
+            children.add(child);
+        }
     }
-    
-    public int getValue()
-    {
-	//TODO
-	return value;
-    }
-    
-    public ArrayList<Tree> getChildren()
-    {
-	//TODO
-	return children;
-    }
-    
-    public void add(Tree child)
-    {
-	//TODO
-    }
-}
 
     /**
      * In a binary tree, each node has two children. In a ternary tree, each node has 3 children.
