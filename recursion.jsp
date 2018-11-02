@@ -69,7 +69,11 @@
      */
     public int fibonacci(int n)
     {
-         
+        if (n == 1 || n == 2 )
+        {
+            return 1;
+        }
+        return (fibonacci(n - 1) + fibonacci(n - 2));
     }
 
     //TODO
@@ -151,9 +155,10 @@
     {
         if (height == 1 )
         {
-            //TODO
+            return 1;
         }
         //TODO
+        return 1 + branchingFactor + nnaryTreeSize(branchingFactor, height - 1);
     }
 
     /**
@@ -167,6 +172,21 @@
     public int treeSum(Tree tree)
     {
         //TODO
+        int treeSum = tree.value;
+        if (tree.children.size() == 0 )
+        {
+            return treeSum;
+        } else
+        {
+            for (int i = 0; i < tree.children.size(); i++)
+            {
+                if (tree.children.get(i) != null )
+                {
+                    treeSum = treeSum + treeSum(tree.children.get(i));
+                }
+            }
+        }
+        return treeSum;
     }
 
     /**
